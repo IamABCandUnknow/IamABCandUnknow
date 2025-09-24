@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unknow</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', 'Yu Gothic', sans-serif;
+      background: linear-gradient(90deg, #ff8c08, #e1f714);
+      color: #000;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 30px 0;
+      background: linear-gradient(135deg, #ff8c08, #e1f714);
+      color: white;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    .entry {
+      background: white;
+      margin: 30px auto;
+      padding: 20px 30px;
+      max-width: 800px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s;
+    }
+
+    .entry:hover {
+      transform: scale(1.01);
+    }
+
+    .entry h2 {
+      font-size: 1.4em;
+      color: #1b3b94;
+      margin-bottom: 10px;
+    }
+
+    .entry .date {
+      font-size: 0.9em;
+      color: #888;
+      margin-bottom: 20px;
+    }
+
+    .entry p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      white-space: pre-line;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: #888;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>日記</h1>
+    <p style="margin-top: 10px;">僕の日記</p>
+  </header>
+
+<div class="entry">
+    <h2>初めての日記</h2>
+    <div class="date">2025年9月24日（水）</div>
+    <p>
+今日は意外と涼しかった
+    </p>
+  </div>
+  
+  <footer>© 2025 日記帳</footer>
+</body>
+</html>
+
+<script>
+  const correctPassword = "abc";
+
+  let userPassword = prompt("🔐 パスワードを入力してください(burosuta name)：");
+
+   if (userPassword !== correctPassword) {
+    document.body.innerHTML = "<h2 style='text-align:center; margin-top:50px;'>⛔ パスワードが間違っています</h2>";
+  }
+</script>
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>日記トップ</title>
+</head>
+<body>
+  <h1>日記一覧</h1>
+  <ul>
+    <li><a href="diary-2025-09-24.html">2025/09/24</a></li>
+    
+    <!-- ここにどんどん追加していく -->
+  </ul>
+</body>
+</html>
